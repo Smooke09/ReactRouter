@@ -1,17 +1,17 @@
 import "./App.css";
 import React from "react";
 
-import { BrowserRouter } from "react-router-dom"; // essa importação mudou
+import { BrowserRouter as Router } from "react-router-dom"; // essa importação mudou
 
 import Menu from "../components/layout/Menu";
 import Content from "../components/layout/Content";
 
 const App = (props) => (
   <div className="App">
-    <BrowserRouter>
+    <Router>
       <Menu />
       <Content />
-    </BrowserRouter>
+    </Router>
   </div>
 );
 
